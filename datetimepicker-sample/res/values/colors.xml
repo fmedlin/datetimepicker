@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="done_text_color_normal">#4dffffff</color>
+    <color name="done_text_color_disabled">#ffcccccc</color>
+    <color name="accent_color">#ffca2127</color>
+</resources>

@@ -6,25 +6,23 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.widget.TextView;
-
 import com.fourmob.datetimepicker.R;
 
 public class TextViewWithCircularIndicator extends TextView {
-    
+
 	private final int mCircleColor;
     private Paint mCirclePaint = new Paint();
 	private boolean mDrawCircle;
 	private final String mItemIsSelectedText;
 	private final int mRadius;
 
-	public TextViewWithCircularIndicator(Context context, AttributeSet attributeSet) {
+    public TextViewWithCircularIndicator(Context context, AttributeSet attributeSet) {
 		super(context, attributeSet);
-        
-		Resources res = context.getResources();
-		mCircleColor = res.getColor(R.color.blue);
+
+        Resources res = context.getResources();
+        mCircleColor = res.getColor(android.R.color.white);
 		mRadius = res.getDimensionPixelOffset(R.dimen.month_select_circle_radius);
 		mItemIsSelectedText = context.getResources().getString(R.string.item_is_selected);
-        
 		init();
 	}
 

@@ -19,7 +19,7 @@ android {
         versionName project.VERSION_NAME
         versionCode Integer.parseInt(project.VERSION_CODE)
     }
-	
+
 	sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'

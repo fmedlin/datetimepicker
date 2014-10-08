@@ -16,23 +16,6 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
-    <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
-    </style>
-
-    <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-    </style>
-
     <style name="time_label">
         <item name="android:textSize">@dimen/time_label_size</item>
         <item name="android:textColor">@color/numbers_text_color</item>
@@ -45,4 +28,58 @@
     </style>
 
     <style name="day_of_week_label_condensed" />
+
+    <style name="DatePickerBase"/>
+
+    <style name="DatePickerBase.BorderlessButton"/>
+
+    <style name="DatePickerBase.ButtonBar" parent="android:ButtonBar"/>
+
+    <style name="DatePickerBase.Header">
+        <item name="android:background">@color/calendar_header</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="DatePickerBase.DateAnimator">
+        <item name="android:background">@color/date_picker_view_animator</item>
+    </style>
+
+    <style name="DatePickerBase.DateIndicator">
+        <item name="android:textColor">@color/date_picker_year_selector</item>
+    </style>
+
+    <style name="DatePickerBase.SelectedDate" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/date_picker_selector</item>
+    </style>
+
+    <style name="DatePickerBase.SelectedDate.Background">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="DatePicker" parent="DatePickerBase">
+    </style>
+
+    <style name="DatePicker.BorderlessButton" parent="DatePickerBase.BorderlessButton">
+        <item name="android:textSize">@dimen/done_label_size</item>
+        <item name="android:textColor">@color/done_text_color</item>
+    </style>
+
+    <style name="DatePicker.ButtonBar" parent="DatePickerBase.ButtonBar">
+    </style>
+
+    <style name="DatePicker.SelectedDate" parent="DatePickerBase.SelectedDate">
+    </style>
+
+    <style name="DatePicker.SelectedDate.Background">
+    </style>
+
+    <style name="DatePicker.Header" parent="DatePickerBase.Header">
+    </style>
+
+    <style name="DatePicker.DateAnimator" parent="DatePickerBase.DateAnimator">
+    </style>
+
+    <style name="DatePicker.DateIndicator" parent="DatePickerBase.DateIndicator">
+    </style>
+
 </resources>
