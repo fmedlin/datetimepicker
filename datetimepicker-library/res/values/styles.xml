@@ -36,12 +36,12 @@
     <style name="DatePickerBase.ButtonBar" parent="android:ButtonBar"/>
 
     <style name="DatePickerBase.Header">
-        <item name="android:background">@color/calendar_header</item>
+        <item name="android:background">#ff000000</item>
         <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="DatePickerBase.DateAnimator">
-        <item name="android:background">@color/date_picker_view_animator</item>
+        <item name="android:background">#ff000000</item>
     </style>
 
     <style name="DatePickerBase.DateIndicator">
@@ -53,13 +53,14 @@
     </style>
 
     <style name="DatePickerBase.SelectedDate.Background">
-        <item name="android:background">@color/white</item>
+        <item name="android:background">#ff000000</item>
     </style>
 
     <style name="DatePicker" parent="DatePickerBase">
     </style>
 
     <style name="DatePicker.BorderlessButton" parent="DatePickerBase.BorderlessButton">
+        <item name="android:background">#ff000000</item>
         <item name="android:textSize">@dimen/done_label_size</item>
         <item name="android:textColor">@color/done_text_color</item>
     </style>
